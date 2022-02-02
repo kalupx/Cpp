@@ -21,7 +21,7 @@ Aviao::Aviao(int tp){
         tipo="monomotor";
         VelMax=350;
     }
-    if(tp==1){
+    if(tp==3){
         tipo="planador";
         VelMax=180;
     }

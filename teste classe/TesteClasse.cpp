@@ -4,10 +4,13 @@
 using namespace std;
 
 int main(){
-
-    Aviao *av1=new Aviao(3);
-    Aviao *av2=new Aviao(1);
-    Aviao *av3=new Aviao(2);
+    int testmod;
+    cin  >> testmod;
+    Aviao *av1=new Aviao(testmod);
+    testmod++;
+    Aviao *av2=new Aviao(testmod);
+    testmod++;
+    Aviao *av3=new Aviao(testmod);
 
     av1->imprimir();
     av2->imprimir();
