@@ -1,13 +1,17 @@
 #include <iostream>
-#include "Classe.h"
+#include "Aviao.h"
+
+using namespace std;
 
 int main(){
 
-    aviao *av1 = new aviao(3);
+    Aviao *av1=new Aviao(3);
+    Aviao *av1=new Aviao(1);
+    Aviao *av1=new Aviao(2);
 
-
-
-
+    av1->imprimir();
+    av2->imprimir();
+    av3->imprimir();
 
     return 0;
 }
