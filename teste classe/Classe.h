@@ -8,6 +8,7 @@ public:
     int VelMax;
     std::string tipo;
     Aviao(int tp);
+    void imprimir();
 private:
 
 };
@@ -18,6 +19,10 @@ Aviao::Aviao(int tp){
         VelMax = 800;
     }
 }
-
+void imprimir(){
+    std::cout << "tipo: " << tipo << std::endl;
+    std::cout << "velocidade maxima: " << std::endl;
+    std::cout << "velocidade atual: " << std::endl;
+}
 
 #endif
