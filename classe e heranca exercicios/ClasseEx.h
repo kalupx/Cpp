@@ -4,11 +4,13 @@
 class retangulo
 {
 private:
-    int comprimento = 10;
-    int altura = 10;
+    int comprimento = 8;
+    int altura = 9;
 public:
     int getaltura();
     int getcomprimento();
+    void setaltura();
+    void setcomprimento();
 };
 
 int retangulo::getaltura(){
@@ -16,6 +18,12 @@ int retangulo::getaltura(){
 }
 int retangulo::getcomprimento(){
     return comprimento;
+}
+void retangulo::setaltura(){
+    std::cin >> altura;
+}
+void retangulo::setcomprimento(){
+    std::cin >> comprimento;
 }
 
 
