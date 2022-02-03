@@ -8,6 +8,7 @@ int main(){
     moto *hornet = new moto;
 
     cout << "heranca.cpp esta sendo executado" << endl;
-    cout << hornet->rodas;
+    cout << hornet->portas;
+    
     return 0;
 }

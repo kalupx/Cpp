@@ -7,7 +7,6 @@ private:
     /* data */
 public:
     int rodas;
-    char cor[30];
     int portas;
 };
 
@@ -22,7 +21,7 @@ class moto:public veiculo{
 moto::moto(){
     rodas = 2;
     portas = 0;
-    cor = 'vermelho';
+    
 }
 
 
