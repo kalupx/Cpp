@@ -1,7 +1,7 @@
 #ifndef ClasseEx_H_INCLUDED
 #define ClasseEx_H_INCLUDED
 
-class figuras
+class retangulo
 {
 private:
     int comprimento = 8;
@@ -11,29 +11,18 @@ public:
     int getcomprimento();
     void setaltura();
     void setcomprimento();
-    int teste;
 };
 
-class retangulo:public figuras{
-    public:
-    retangulo();
-    
-};
-
-retangulo::retangulo(){
-    teste = 7;
-}
-
-int figuras::getaltura(){
+int retangulo::getaltura(){
     return altura;
 }
-int figuras::getcomprimento(){
+int retangulo::getcomprimento(){
     return comprimento;
 }
-void figuras::setaltura(){
+void retangulo::setaltura(){
     std::cin >> altura;
 }
-void figuras::setcomprimento(){
+void retangulo::setcomprimento(){
     std::cin >> comprimento;
 }
 
