@@ -7,21 +7,22 @@ private:
     /* data */
 public:
     int rodas;
-    //char cor[30];
+    char cor[30];
     int portas;
 };
 
 //heranca
 class moto:public veiculo{
     //construtor
-    moto();
+    public:
+        moto();
+        //detalhe, todos os att de motos estao sendo herdados, nao ha declaracao aqui;
 };
  
 moto::moto(){
     rodas = 2;
-    //cor = "vermelho";
     portas = 0;
-
+    cor = 'vermelho';
 }
 
 
