@@ -14,10 +14,18 @@ void leDadosJogador ( Jogador *jogador) {
 int main () {
     Jogador j [5];
 
+    for (int i = 0; i < 5; i++)
+    {
+        cin >> j[i].x;
+        cin >> j[i].y;
+    }
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "x: " << j[i].x << " y: " << j[i].y << endl;
+    }
+        
     
-    cin >> j[1].x;
-    cin >> j[1].y;
-    cout << "x: " << j[1].x << " y: " << j[1].y << endl;
     /*
     for (int i = 0; i < 5; i++)
     {
