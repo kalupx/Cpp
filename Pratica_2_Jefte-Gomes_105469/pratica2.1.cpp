@@ -18,13 +18,23 @@ void imprime ( int *ptr , int n) {
     {
         cout << *(ptr+i) << " ";
     }
+    cout << endl;
 }
 
-/*
-void contaParImpar ( int .. , int ... , int ... , int ... , int ...) {
-// insira seu codigo aqui ...
+
+void contaParImpar ( int *ptra, int *ptrb , int n , int &par , int &impar) {
+    for (int i = 0; i < n; i++)
+    {   
+        if((*(ptra+i)+*(ptrb+i)) % 2 == 0){
+            par++;
+        }
+        else{
+            impar++;
+        }
+    }
+    
 }
-*/
+
 
 
 int main () {
@@ -33,15 +43,22 @@ int main () {
 
     srand(seed);
 
-    int *a, *b, n;
-    cin >> n;
+    int *a, *b, n, impar = 0, par = 0;
     
+    cin >> n;
+
     a = (int *) malloc(sizeof(int)*n);
     b = (int *) malloc(sizeof(int)*n);
     
     preencheAleatorios(a, n);
     preencheAleatorios(b, n);
+    
     imprime(a, n);
+    imprime(b, n);
 
+    contaParImpar(a, b, n, par, impar);
+
+    cout << "jogadas pares: " << par << endl;
+    cout << "jogadas impares: " << impar << endl;
 return 0;
 }
