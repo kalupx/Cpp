@@ -5,34 +5,29 @@ struct Jogador {
     int pontos ;
     int x , y ;
 };
-/*
+
 void leDadosJogador ( Jogador *jogador) {
-    cin >> j.x;
-    cin >> j.y;
+    cin >> (*jogador).pontos;
+    cin >> (*jogador).x;
+    cin >> (*jogador).y;
 }
-*/
+
+
 int main () {
-    Jogador j [5];
+    Jogador j [5], *ptrj;
 
+    ptrj = &j[0];
+      
     for (int i = 0; i < 5; i++)
     {
-        cin >> j[i].x;
-        cin >> j[i].y;
+        leDadosJogador(ptrj+i);
     }
-
-    for (int i = 0; i < 5; i++)
-    {
-        cout << "x: " << j[i].x << " y: " << j[i].y << endl;
-    }
-        
     
-    /*
+    
     for (int i = 0; i < 5; i++)
     {
-        leDadosJogador(j[i]);
+        cout << "ponto: " << j[i].pontos << " x: " << j[i].x << " y: " << j[i].y << endl;
     }
-    */
-    
 
 return 0;
 }
