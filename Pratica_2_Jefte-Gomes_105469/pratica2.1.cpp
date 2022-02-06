@@ -38,7 +38,6 @@ void contaParImpar ( int *ptra, int *ptrb , int n , int &par , int &impar) {
 
 
 int main () {
-// insira seu codigo aqui ...
     unsigned seed = time(0);
 
     srand(seed);
