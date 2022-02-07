@@ -14,6 +14,8 @@ struct ListaVetorInteiros{
     void inserir_elemento(int elemento);
 
     void imprimir();
+    
+    void remover_primeiro ();
 };
 
 void  ListaVetorInteiros::inserir_elemento(int elemento){
@@ -31,6 +33,19 @@ void ListaVetorInteiros::imprimir(){
         std::cout << _elementos[i] << " ";
     }
     
+}
+
+void ListaVetorInteiros::remover_primeiro (){
+    for (int i = 0; i < _num_elementos_inseridos; i++)
+    {
+        if(i == 0){
+            _elementos[i] = 0;
+        }
+        else{
+            _elementos[i-1] = _elementos[i];
+        }
+    }
+    _num_elementos_inseridos--;
 }
 
 ListaVetorInteiros::~ListaVetorInteiros(){

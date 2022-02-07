@@ -9,7 +9,7 @@ ListaVetorInteiros::ListaVetorInteiros(){
 }
 
 int main () {
-    /*
+    
     ListaVetorInteiros l1 ;
     
     l1.inserir_elemento (7) ;
@@ -20,10 +20,11 @@ int main () {
 
     l1.imprimir () ;
     // 7 , 10 , 5 , 2 , 1
+    cout << endl;
 
     l1.remover_primeiro () ;
     l1.imprimir () ;
-    // 10 , 5 , 2 , 1
+/*    // 10 , 5 , 2 , 1
 
     l1.remover_ultimo () ;
     l1.imprimir () ;
