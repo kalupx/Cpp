@@ -58,13 +58,15 @@ void ListaVetorInteiros::remover_ultimo (){
 }
 
 void ListaVetorInteiros::inverte(){
-    int aux = _elementos[_num_elementos_inseridos];
-    int control = 0;
-    //corrigir a troca;
-    for (int i = _num_elementos_inseridos-1); i >= 0; i--)
+    int ctr = 0, fim, aux;
+    fim = _num_elementos_inseridos-1;
+    while (ctr < fim)
     {
-        _elementos[_num_elementos_inseridos] = _elementos[control];
-        control++;
+        aux = _elementos[ctr];
+        _elementos[ctr] = _elementos[fim];
+        _elementos[fim] = aux;
+        ctr++;
+        fim--;
     }
     
 }
