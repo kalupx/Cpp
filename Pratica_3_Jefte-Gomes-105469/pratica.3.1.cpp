@@ -30,10 +30,10 @@ int main () {
     l1.remover_ultimo () ;
     l1.imprimir () ;
     // 10 , 5 , 2
-/*
+
     l1.inverte () ;
     l1.imprimir () ;
     //2 , 5 , 10
-*/
+
 return 0;
 }
