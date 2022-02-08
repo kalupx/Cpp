@@ -3,17 +3,15 @@
 
 struct  Cubo
 {
-    float a;
+    float a, area, volume;
     //construtor
     Cubo(float a){
         this->a = a;
     }
 
     ~Cubo();
-
-    void calculaAreaCubo();
-
 };
+
 
 
 #endif
