@@ -8,8 +8,6 @@ struct  Cubo
     Cubo(float a){
         this->a = a;
     }
-
-    ~Cubo();
 };
 
 
