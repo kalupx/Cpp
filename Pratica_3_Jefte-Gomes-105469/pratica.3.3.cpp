@@ -1,5 +1,4 @@
 #include <iostream>
-#include <ctime>
 #include "pratica.3.3.h"
 
 using namespace std;

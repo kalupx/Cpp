@@ -22,5 +22,6 @@ void Data::exibirDataFormatoNumero(){
 void Data::exibirDataPorExtenso(){
     std::cout << dia << "/" << meses[mes-1] << "/" << ano << std::endl;
 };
-void Data::getDataEmSegundos(){};
+void Data::getDataEmSegundos(){
+};
 #endif
