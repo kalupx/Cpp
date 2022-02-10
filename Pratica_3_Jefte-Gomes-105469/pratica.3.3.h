@@ -3,6 +3,7 @@
 
 struct Data{
     int dia, mes, ano;
+    char meses[12][15] = {"janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
 
     Data(int dia, int mes, int ano);
     void exibirDataFormatoNumero();
@@ -18,6 +19,8 @@ Data::Data(int dia, int mes, int ano){
 void Data::exibirDataFormatoNumero(){
     std::cout << dia << "/" << mes << "/" << ano << std::endl;
 };
-void Data::exibirDataPorExtenso(){};
+void Data::exibirDataPorExtenso(){
+    std::cout << dia << "/" << meses[mes-1] << "/" << ano << std::endl;
+};
 void Data::getDataEmSegundos(){};
 #endif
