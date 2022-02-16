@@ -1,39 +1,27 @@
-#include <iostream>
-#include "pratica4_exercicio3.h"
+#ifndef AQUECEDOR_H
+#define AQUECEDOR_H 
+ 
+class Aquecedor{
+    private:
+        float temperatura;
+    public:
+        Aquecedor();
+        float getTemperatura();
+        void aquecer();
+        void esfriar();
 
-int main () {
-Aquecedor aq1 ;
-Aquecedor aq2 (20) ;
-Aquecedor aq3 (38 ,1) ;
+};
+Aquecedor::Aquecedor(): temperatura(20) {}
 
-// Temperatura de cada um dos aquecedores
-std :: cout << aq1 . getTemperatura () << std :: endl ;
-std :: cout << aq2 . getTemperatura () << std :: endl ;
-std :: cout << aq3 . getTemperatura () << std :: endl ;
-std :: cout << " -----------------------------------" << std :: endl ;
-
-aq1 . aquecer () ;
-aq2 . aquecer () ;
-aq3 . aquecer () ;
-
-// Temperatura de cada um dos aquecedores
-std :: cout << aq1 . getTemperatura () << std :: endl ;
-std :: cout << aq2 . getTemperatura () << std :: endl ;
-std :: cout << aq3 . getTemperatura () << std :: endl ;
-std :: cout << " -----------------------------------" << std :: endl ;
-
-aq1 . setFatorDeIncrementoDaTemperatura (10) ;
-aq2 . setFatorDeIncrementoDaTemperatura (25) ;
-aq3 . setFatorDeIncrementoDaTemperatura (2) ;
-
-aq1 . aquecer () ;
-aq2 . esfriar () ;
-aq3 . aquecer () ;
-
-// Temperatura de cada um dos aquecedores
-std :: cout << aq1 . getTemperatura () << std :: endl ;
-std :: cout << aq2 . getTemperatura () << std :: endl ;
-std :: cout << aq3 . getTemperatura () << std :: endl ;
-std :: cout << " -----------------------------------" << std :: endl ;
-return 0;
+float Aquecedor::getTemperatura (){
+    return temperatura;
 }
+
+void Aquecedor::aquecer(){
+    temperatura+=5;
+}
+void Aquecedor::esfriar(){
+    temperatura-=5;
+}
+
+#endif
