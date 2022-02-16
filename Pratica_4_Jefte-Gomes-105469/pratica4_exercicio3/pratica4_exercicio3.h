@@ -4,6 +4,9 @@
 class Aquecedor{
     private:
         float temperatura;
+        float temperaturaminima;
+        float temperaturamaxima;
+        float fatordeincremento;
     public:
         Aquecedor();
         Aquecedor(float t1);
@@ -14,19 +17,30 @@ class Aquecedor{
         void esfriar();
 
 };
-Aquecedor::Aquecedor(): temperatura(20) {}
-Aquecedor::Aquecedor(float t1): temperatura(t1) {}
-Aquecedor::Aquecedor(float t1, float t2): temperatura(t2) {}
+//arrumar prob cm temp
+Aquecedor::Aquecedor(): temperatura(20), temperaturaminima(10), temperaturamaxima(40), fatordeincremento(5) {}
+Aquecedor::Aquecedor(float t1): temperatura(t1), temperaturaminima(10), temperaturamaxima(40) {}
+Aquecedor::Aquecedor(float t1, float incremento): temperatura(t2), temperaturaminima(10), temperaturamaxima(40), fatordeincremento(incremento) {}
 
 float Aquecedor::getTemperatura (){
     return temperatura;
 }
 
 void Aquecedor::aquecer(){
-    temperatura+=5;
+    if(temperatura+fatordeincremento<=temperaturamaxima)
+        temperatura+=fatordeincremento;
+    else{
+        std::cout << "nao e possivel aumentar a temperatura pois excederia a temperatura maxima." << std::endl;
+    }
 }
 void Aquecedor::esfriar(){
-    temperatura-=5;
+    if(temperatura-fatordeincremento>=temperaturaminima){
+        temperatura-=fatordeincremento;
+    }
+    else{
+        std::cout << "nao e possivel reduzir a temperatura pois excederia a temperatura minima." << std::endl;
+    }
+    
 }
 
 #endif
