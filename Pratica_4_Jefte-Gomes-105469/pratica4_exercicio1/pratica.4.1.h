@@ -26,19 +26,35 @@ void Rectangle::setLenght(float lenght){
         this->lenght = lenght;
     }
     else{
-        if(lenght%20<0){
-            this->lenght = (lenght%20)*-1;
+        if(lenght < 0){
+            std::cout << "length negativo" << std::endl;
+            lenght*=-1;
+            this->lenght = lenght;
         }
         else{
-            this->lenght = lenght%20;
+            std::cout << "length maior que 20" << std::endl;
+            this->lenght = lenght;
         }
     }
 }
 void Rectangle::setWidth(float width){
-    this->width = width;
+    if(width <=20 && width >= 0){
+        this->width = width;
+    }
+    else{
+        if(width < 0){
+            std::cout << "width negativo" << std::endl;
+            width*=-1;
+            this->width = width;
+        }
+        else{
+            std::cout << "width maior que 20" << std::endl;
+            this->width = width;
+        }
+    }
 }
 float Rectangle::calcPerimeter(){
-    return (width*2)+(lenght*2);
+    return ((lenght+width)*2);
 }
 float Rectangle::calcArea(){
     return width*lenght;
