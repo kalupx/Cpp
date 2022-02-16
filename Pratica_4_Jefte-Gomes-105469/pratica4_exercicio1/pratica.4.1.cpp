@@ -14,9 +14,8 @@ r1 . setWidth ( -2) ;
 r2 . setLenght (15) ;
 r2 . setWidth (7) ;
 
-std::cout << "perimeter r1: " << r1.calcPerimeter() << std::endl;
-//std :: cout << r1 . calcPerimeter () << std :: endl ;
-//std :: cout << r2 . calcArea () << std :: endl ;
+std :: cout << r1 . calcPerimeter () << std :: endl ;
+std :: cout << r2 . calcArea () << std :: endl ;
 
 return 0;
 }
