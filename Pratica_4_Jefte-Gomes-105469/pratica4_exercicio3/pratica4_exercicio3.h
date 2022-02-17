@@ -15,7 +15,7 @@ class Aquecedor{
         float getTemperatura();
         void aquecer();
         void esfriar();
-
+        void setFatorDeIncrementoDaTemperatura(float fatordeincremento);
 };
 //construtor 1
 Aquecedor::Aquecedor(): temperatura(20), temperaturaminima(10), temperaturamaxima(40), fatordeincremento(5) {}
@@ -47,4 +47,7 @@ void Aquecedor::esfriar(){
     
 }
 
+void Aquecedor::setFatorDeIncrementoDaTemperatura(float fatordeincremento){
+    this->fatordeincremento = fatordeincremento;
+}
 #endif

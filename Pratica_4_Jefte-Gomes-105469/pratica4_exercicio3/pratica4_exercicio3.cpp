@@ -21,7 +21,7 @@ std :: cout << aq1 . getTemperatura () << std :: endl ;
 std :: cout << aq2 . getTemperatura () << std :: endl ;
 std :: cout << aq3 . getTemperatura () << std :: endl ;
 std :: cout << " -----------------------------------" << std :: endl ;
-/*
+
 aq1 . setFatorDeIncrementoDaTemperatura (10) ;
 aq2 . setFatorDeIncrementoDaTemperatura (25) ;
 aq3 . setFatorDeIncrementoDaTemperatura (2) ;
@@ -35,6 +35,6 @@ std :: cout << aq1 . getTemperatura () << std :: endl ;
 std :: cout << aq2 . getTemperatura () << std :: endl ;
 std :: cout << aq3 . getTemperatura () << std :: endl ;
 std :: cout << " -----------------------------------" << std :: endl ;
-*/
+
 return 0;
 }
