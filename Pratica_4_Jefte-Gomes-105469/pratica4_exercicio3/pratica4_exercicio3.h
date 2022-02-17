@@ -17,10 +17,14 @@ class Aquecedor{
         void esfriar();
 
 };
-//arrumar prob cm temp
+//construtor 1
 Aquecedor::Aquecedor(): temperatura(20), temperaturaminima(10), temperaturamaxima(40), fatordeincremento(5) {}
+
+//construtor 2
 Aquecedor::Aquecedor(float t1): temperatura(t1), temperaturaminima(10), temperaturamaxima(40) {}
-Aquecedor::Aquecedor(float t1, float incremento): temperatura(t2), temperaturaminima(10), temperaturamaxima(40), fatordeincremento(incremento) {}
+
+//construtor 3
+Aquecedor::Aquecedor(float t1, float incremento): temperatura(t1), temperaturaminima(10), temperaturamaxima(40), fatordeincremento(incremento) {}
 
 float Aquecedor::getTemperatura (){
     return temperatura;
