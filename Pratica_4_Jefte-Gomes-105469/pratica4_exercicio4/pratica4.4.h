@@ -6,11 +6,13 @@ private:
     static float annualInterestRate;
     float savingsBalance;
 public:
-    SavingsAccount(/* args */);
+    SavingsAccount(int val);
     ~SavingsAccount();
+    float savingsBalance();
+    static modifyInterestRate();
 };
 
-SavingsAccount::SavingsAccount(/* args */)
+SavingsAccount::SavingsAccount(int val)
 {
 }
 
@@ -18,4 +20,12 @@ SavingsAccount::~SavingsAccount()
 {
 }
 
+float SavingsAccount::savingsBalance(){
+    savingsBalance = (annualInterestRate*savingsBalance)/12;
+    return savingsBalance;
+}
+
+static SavingsAccount::modifyInterestRate(){
+    std::cout << "teste..." << std::endl;
+}
 #endif

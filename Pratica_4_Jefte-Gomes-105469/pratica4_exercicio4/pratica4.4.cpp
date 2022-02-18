@@ -1,9 +1,11 @@
 #include <iostream>
+#include "pratica4.4.h"
+
 int main ( void ) {
 // Main . Criando duas contas .
 SavingsAccount saver1 = SavingsAccount (2000) ;
 SavingsAccount saver2 = SavingsAccount (3000) ;
-
+/*
 // Imprimindo o monthly balance
 std :: cout << saver1 . calculateMonthlyInterest () << std :: endl ;
 std :: cout << saver2 . calculateMonthlyInterest () << std :: endl ;
@@ -14,6 +16,6 @@ SavingsAccount :: annualInterestRate = 3.00;
 // Imprimindo o monthly balance . Tem que mudar para as duas classes .
 std :: cout << saver1 . calculateMonthlyInterest () << std :: endl ;
 std :: cout << saver2 . calculateMonthlyInterest () << std :: endl ;
-
+*/
 return 0;
 }
