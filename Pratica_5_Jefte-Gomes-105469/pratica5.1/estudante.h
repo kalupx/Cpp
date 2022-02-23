@@ -4,19 +4,19 @@
 #include "turma.h"
 //Turma turma;
 //Turma *ptrturma = &turma;
-
+//fazer composicao
 class Estudante : public Pessoa
 {
 private:
-    //Turma turma;
+    Turma turma;
     const int _matricula;
 public:
-    Estudante(std::string nome, int matricula);
+    Estudante(std::string nome, std::string cod, int n, int matricula);
     int get_matricula() const;
     
 };
 
-Estudante::Estudante(std::string nome, int matricula) : Pessoa(nome), _matricula(matricula)
+Estudante::Estudante(std::string nome, std::string cod, int n, int matricula) : Pessoa(nome), turma(cod, n), _matricula(matricula)
 {
 }
 

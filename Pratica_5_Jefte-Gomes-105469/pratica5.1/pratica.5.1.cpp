@@ -10,7 +10,7 @@ int main(){
     std::cout << "A pessoa e: " << pessoa.get_nome() << std::endl;
     std::cout << "O estudante e: " << estudante.get_nome() << std::endl;
     */
-    Turma t1;
+    Turma t1("string", 2);
     //t1.set_codigo("5");
     //t1.set_ano(34);
     std::cout << t1.get_ano() << std::endl;

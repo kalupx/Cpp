@@ -15,11 +15,13 @@ public:
     virtual void set_codigo(std::string codigo);
     virtual void set_ano(int ano);
 };
+/*
 //criando um construtor sem argumentos
 Turma::Turma(){
     this->_codigo = "null";
     this->_ano = 0;
 }
+*/
 Turma::Turma(std::string codigo, int ano) : _codigo(codigo), _ano(ano)
 {
 }
