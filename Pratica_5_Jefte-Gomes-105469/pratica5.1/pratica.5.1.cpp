@@ -10,11 +10,13 @@ int main(){
     std::cout << "A pessoa e: " << pessoa.get_nome() << std::endl;
     std::cout << "O estudante e: " << estudante.get_nome() << std::endl;
     */
-    Turma t1("string", 2);
+    //Turma t1("string", 2);
     //t1.set_codigo("5");
     //t1.set_ano(34);
-    std::cout << t1.get_ano() << std::endl;
-    std::cout << t1.get_codigo() << std::endl;
+    Estudante e1("jorge", "128312", 3, 4);
+    std::cout << e1.get_nome();
+    //std::cout << t1.get_ano() << std::endl;
+    //std::cout << t1.get_codigo() << std::endl;
     
     return 0;
 };
