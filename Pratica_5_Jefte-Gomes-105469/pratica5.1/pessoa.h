@@ -11,12 +11,10 @@ public:
     virtual std::string get_nome() const;
 };
 
-Pessoa::Pessoa(std::string nome) : _nome(nome)
-{
-}
+Pessoa::Pessoa(std::string nome): _nome(nome){}
 
 std::string Pessoa::get_nome() const{
     return this->_nome;
 }
 
-#endif
+#endif      
