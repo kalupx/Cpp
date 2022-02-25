@@ -5,8 +5,6 @@
 
 int main () {
 
-TwoDayPackage td1("Jose", "Rua", 12.3, 35);
-
 
 /*
 Package package (" Pacote 1", "Rua Passos , 71", 20 , 15) ;

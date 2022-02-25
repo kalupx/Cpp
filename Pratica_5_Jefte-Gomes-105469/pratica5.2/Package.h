@@ -6,9 +6,9 @@ class Package
 private:
     std::string _nome;
     std::string _endereco;
-    float _peso, _custo;
+    unsigned int _peso, _custo;
 public:
-    Package(std::string nome, std::string endereco, float peso, float custo);
+    Package(std::string nome, std::string endereco, unsigned int peso, unsigned int custo);
     //getters
     std::string get_nome();
     std::string get_endereco();
@@ -21,9 +21,12 @@ public:
     void set_peso(float peso);
     void set_custo(float custo);
     ~Package();
+
+    //outros metodos
+    double calculateCost();
 };
 
-Package::Package(std::string nome, std::string endereco, float peso, float custo) : _nome(nome), _endereco(endereco), _peso(peso), _custo(custo)
+Package::Package(std::string nome, std::string endereco, unsigned int peso, unsigned int custo) : _nome(nome), _endereco(endereco), _peso(peso), _custo(custo)
 {
 }
 
@@ -55,6 +58,12 @@ void Package::set_peso(float peso){
 }
 void Package::set_custo(float custo){
     this->_custo=custo;
+}
+
+//outros metodos
+
+double Package::calculateCost(){
+    return (get_custo()*get_peso());
 }
 
 Package::~Package()
