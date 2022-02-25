@@ -5,14 +5,20 @@
 class OvernightPackage : public Package
 {
 private:
-    /* data */
+    float _Tx_night;
 public:
-    OvernightPackage(std::string nome, std::string endereco, float peso, float custo);
+    OvernightPackage(std::string nome, std::string endereco, float peso, float custo, float taxa);
+    virtual double calculateCost() override;
     ~OvernightPackage();
 };
 
-OvernightPackage::OvernightPackage(std::string nome, std::string endereco, float peso, float custo) : Package(nome, endereco, peso, custo)
+OvernightPackage::OvernightPackage(std::string nome, std::string endereco, float peso, float custo, float taxa) : Package(nome, endereco, peso, custo), _Tx_night(taxa)
 {
+}
+
+double  OvernightPackage::calculateCost(){
+    return (get_custo()*get_peso() + (_Tx_night*get_peso()));
+
 }
 
 OvernightPackage::~OvernightPackage()

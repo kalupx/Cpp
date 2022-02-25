@@ -8,6 +8,8 @@ private:
     float _Tx_twodays;
 public:
     TwoDayPackage(std::string nome, std::string endereco, float peso, float custo, float taxa);
+    virtual double calculateCost() override;
+
     ~TwoDayPackage();
 };
 
@@ -15,7 +17,10 @@ TwoDayPackage::TwoDayPackage(std::string nome, std::string endereco, float peso,
 {
 }
 
+double TwoDayPackage::calculateCost(){
+    return (get_custo()*get_peso() + _Tx_twodays);
 
+}
 
 TwoDayPackage::~TwoDayPackage()
 {
