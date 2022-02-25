@@ -7,11 +7,11 @@ class OvernightPackage : public Package
 private:
     /* data */
 public:
-    OvernightPackage(/* args */);
+    OvernightPackage(std::string nome, std::string endereco, float peso, float custo);
     ~OvernightPackage();
 };
 
-OvernightPackage::OvernightPackage(/* args */)
+OvernightPackage::OvernightPackage(std::string nome, std::string endereco, float peso, float custo) : Package(nome, endereco, peso, custo)
 {
 }
 
