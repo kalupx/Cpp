@@ -7,11 +7,11 @@ class TwoDayPackage : public Package
 private:
     /* data */
 public:
-    TwoDayPackage(/* args */);
+    TwoDayPackage(std::string nome, std::string endereco, float peso, float custo);
     ~TwoDayPackage();
 };
 
-TwoDayPackage::TwoDayPackage(/* args */)
+TwoDayPackage::TwoDayPackage(std::string nome, std::string endereco, float peso, float custo) : Package(nome, endereco, peso, custo)
 {
 }
 
