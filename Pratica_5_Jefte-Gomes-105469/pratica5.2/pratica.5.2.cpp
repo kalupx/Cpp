@@ -4,7 +4,11 @@
 //#include "OvernightPackage.h"
 
 int main () {
-    /*
+
+TwoDayPackage td1("Jose", "Rua", 12.3, 35);
+
+
+/*
 Package package (" Pacote 1", "Rua Passos , 71", 20 , 15) ;
 TwoDayPackage two_day_package (" Pacote 2", "Av. PH Holfs , s/n", 5 , 15 , 10) ;
 OvernightPackage over_night_package (" Pacote 3", "Av. Santa Rita , 110", 50 , 15 , 15) ;
