@@ -2,6 +2,6 @@
 #include "aeroplane.h"
 
 
-void aeroplane::_aeroplane(){
+void Aeroplane::_aeroplane(){
     std :: cout<< "AEROPLANE.CPP EXECUTADO..." << std::endl ;
 }

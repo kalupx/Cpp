@@ -1,7 +1,9 @@
 #ifndef FIGHTERAIRCRAFT_H
 #define FIGHTERAIRCRAFT_H
 
-class fighteraircraft
+#include "aeroplane.h"
+
+class fighteraircraft : public Aeroplane
 {
 private:
 public:

@@ -1,7 +1,9 @@
 #ifndef JETPLANE_H
 #define JETPLANE_H
 
-class jetplane
+#include "aeroplane.h"
+
+class jetplane : public Aeroplane
 {
 private:
     /* data */

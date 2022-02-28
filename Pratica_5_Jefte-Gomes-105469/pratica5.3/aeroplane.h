@@ -1,7 +1,7 @@
 #ifndef AEROPLANE_H
 #define AEROPLANE_H
 
-class aeroplane
+class Aeroplane
 {
 private:
     
