@@ -5,24 +5,14 @@
 class Forma2d : public Forma
 {
 private:
-    std::string _cor = "vermelho";
-    std::string _nome = "robson";
+    
 public:
-    Forma2d();
-    virtual std::string get_cor();
-    virtual std::string get_nome();
+    virtual std::string get_cor() = 0;
+    virtual std::string get_nome() = 0;
+    virtual double get_area() = 0;
+    virtual double get_perimetro() = 0;
     
 };
-/*
-Forma2d::Forma2d()
-{
-}
 
-std::string Forma2d::get_cor(){
-    return _cor;
-}
 
-std::string Forma2d::get_nome(){
-    return _nome;
-}*/
 #endif
