@@ -9,15 +9,15 @@
 
     //funcoes virtuais
     std::string Triangulo::get_cor(){
-        return "get_Cor_Triangulo";
+        return _cor;
     }
     std::string Triangulo::get_nome(){
-        return "get_nome_Triangulo";
+        return _nome;
     }
     double Triangulo::get_area(){
-        return 37;
+        return _altura*_lado3/2;
     }
     double Triangulo::get_perimetro(){
-        return 38;
+        return _lado1+_lado2+_lado3;
     }
     
