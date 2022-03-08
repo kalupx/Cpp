@@ -1,11 +1,11 @@
 #include <iostream>
-//#include "forma2d.h"
 #include "quadrado.h"
 #include "circulo.h"
 #include "triangulo.h"
-//#include "forma3d.h"
+#include "esfera.h"
+
 int main(){
-    
+    /*
     // lado , nome , cor
     Quadrado q (2.0 , " Quadrado ", " Vermelho ") ;
     // raio , nome , cor
@@ -28,6 +28,9 @@ int main(){
 
     std::cout << " Area : " << t3.get_area() << " - Perimetro : " << t3.get_perimetro() << " - Nome : " << t3.get_nome () << " - Cor: " << t3.get_cor() << std::endl ;
 
-    
+    */
+   Esfera e1(2, "esfera", "roxa");
+   std::cout << e1.get_volume() << std::endl;
+
     return 0;
 }
