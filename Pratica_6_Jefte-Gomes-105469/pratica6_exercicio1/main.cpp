@@ -3,9 +3,10 @@
 #include "circulo.h"
 #include "triangulo.h"
 #include "esfera.h"
+#include "cubo.h"
 
 int main(){
-    /*
+    
     // lado , nome , cor
     Quadrado q (2.0 , " Quadrado ", " Vermelho ") ;
     // raio , nome , cor
@@ -17,7 +18,9 @@ int main(){
     // lado 1/ base , altura , nome , cor
     Triangulo t3 (7.0 ,2.0 , " Triangulo Equilatero ", "Verde ") ;
     // raio , nome , cor
-    
+    Esfera e(6.0 ," Esfera ", " Branco ");
+    Cubo cb (9.0 ," Cubo ", " Preto ") ;
+
     std::cout << " Area : " << q.get_area() << " - Perimetro : " << q.get_perimetro() << " - Nome : " << q.get_nome() << " - Cor: " << q.get_cor() << std::endl ;
 
     std::cout << " Area : " << c.get_area() << " - Perimetro : " << c.get_perimetro() << " - Nome : " << c.get_nome() << " -  Cor: " << c.get_cor() << std::endl ;
@@ -28,9 +31,9 @@ int main(){
 
     std::cout << " Area : " << t3.get_area() << " - Perimetro : " << t3.get_perimetro() << " - Nome : " << t3.get_nome () << " - Cor: " << t3.get_cor() << std::endl ;
 
-    */
-   Esfera e1(2, "esfera", "roxa");
-   std::cout << e1.get_volume() << std::endl;
+    std::cout << " Volume : " << e.get_volume () << " - Nome : " << e.get_nome() << " - Cor : " << e.get_cor()<<std::endl;
+    
+    std::cout << " Volume : " << cb.get_volume() << " - Nome : " << cb.get_nome() << " - Cor: " << cb.get_cor() << std::endl ;
 
     return 0;
 }
